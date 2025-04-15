@@ -12,10 +12,10 @@ const Calculator: React.FC = () => {
   const [formula, setFormula] = useState<string>('');
   const [evaluated, setEvaluated] = useState<boolean>(false);
 
-  const maxDigitWarning = () => {
-    setCurrentVal('Digit Limit Met');
-    setTimeout(() => setCurrentVal(prevVal), 1000);
-  };
+  // const maxDigitWarning = () => {
+  //   setCurrentVal('Digit Limit Met');
+  //   setTimeout(() => setCurrentVal(prevVal), 1000);
+  // };
 
   const handleEvaluate = () => {
     if (!currentVal.includes("Limit")) {
